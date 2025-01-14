@@ -3,7 +3,7 @@ from tkinter import *
 import os
 from tkinter import messagebox
 from pathlib import Path
-#from PIL import Image, ImageTk
+import subprocess
 
       
 #Gui
@@ -24,6 +24,6 @@ Linkbut.pack()
 
 #Link
 def seti():
-      
+      subprocess.call("files.php")
 
 win.mainloop()
