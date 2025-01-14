@@ -1,6 +1,7 @@
 #Imports
 from tkinter import *
 import os
+from tkinter import messagebox
 
 #Gui
 win=Tk()
@@ -16,5 +17,9 @@ Linkbut.pack()
 
 #Error management
 path = os.access(link,os.F_OK)
+if path == "false":
+    messagebox.showerror('Arkens', 'Error : Path not valid')
+else:
+    path = os.access(link, )
 
 win.mainloop()
