@@ -19,10 +19,10 @@
           <p>•Make a Token<p>
    <p>                                                                                                                                     
        </p>
-          <p>•link it in the recieving program and it's done.<p>
+          <p>•Link it in the recieving program and it's done.<p>
    <p>                                                                                                                                     
        </p>
-          <h1>Developers<h1>
+          <h1>Developers</h1>
    <p>                                                                                                                                     
        </p>
           <p>•Clone your git repository in a folder.<p>
