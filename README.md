@@ -31,10 +31,10 @@
                  <p>•Download the code pack and paste it into the cloned folder.<p>
    <p>                                                                                                                                     
        </p>
-                 <p>•In valid.py, keep the code tht will run while the token is valid.<p>
+                 <p>•In valid.py, keep the code that will run while the token is valid.<p>
    <p>                                                                                                                                     
        </p>
-                        <p>•In expire.py, keep the code tht will run while the token is expired.<p>
+                        <p>•In expire.py, keep the code that will run while the token is expired.<p>
    <p>                                                                                                                                     
        </p>
 </body>
