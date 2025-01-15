@@ -10,23 +10,31 @@
    <h1>Steps for use</h1>
       <p>                                                                                                                                     
       </p>
-   <p>•Install Arkens Linker<p>
+   <p>•Install Arkens<p>
    <p>                                                                                                                                     
        </p>
-          <p>•Create a GIT repository for your tokens<p>
+          <p>•Clone the respective token GIT repository and keep Arkens in there.<p>
    <p>                                                                                                                                     
        </p>
-          <p>•Make a link from the Arkens to your project directory.<p>
+          <p>•Make a Token<p>
    <p>                                                                                                                                     
        </p>
-          <p>•Make a repo.txt in your linked folder. This contains the path to your locally cloned token repo.<p>
+          <p>•link it in the recieving program and it's done.<p>
    <p>                                                                                                                                     
        </p>
-          <p>•Make a delete.py if you want your code to run after the token expires.<p>
+          <h1>Developers<h1>
    <p>                                                                                                                                     
        </p>
-          <p>•Make a valid.py if you want you code to run while the token is valid.<p>
+          <p>•Clone your git repository in a folder.<p>
    <p>                                                                                                                                     
        </p>
-       <b>NOTE:</b><p>Don't delete Arkens_Linked.py</p>
+                 <p>•Download the code pack and paste it into the cloned folder.<p>
+   <p>                                                                                                                                     
+       </p>
+                 <p>•In valid.py, keep the code tht will run while the token is valid.<p>
+   <p>                                                                                                                                     
+       </p>
+                        <p>•In expire.py, keep the code tht will run while the token is expired.<p>
+   <p>                                                                                                                                     
+       </p>
 </body>
