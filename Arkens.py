@@ -56,8 +56,8 @@ def seti():
       if not  os.path.exists(link):
             try :
                   f = open(Slink, "x")
-                  subprocess.call(["git", "commit -a", Slink])
-                  subprocess.call(["git", "push -add"])
+                  subprocess.call(["git", "commit", Slink])
+                  subprocess.call(["git", "push"])
                   win.destroy()
             except:           
  
