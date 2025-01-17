@@ -68,7 +68,7 @@ def seti():
                   #repo.index.add([Slink]) 
                   #print('Files Added Successfully') 
                   #repo.index.commit(Slink) 
-                  #print('Commited successfully')
+                  print('Commited successfully')
                   win.destroy()
             except:           
  
