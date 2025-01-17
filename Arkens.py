@@ -64,10 +64,10 @@ def seti():
       if not  os.path.exists(link):
             try :
                   f = open(Slink, "x")
-                  #print(Slink)
-                  #repo.index.add([Slink]) 
-                  #print('Files Added Successfully') 
-                  #repo.index.commit(Slink) 
+                  print(Slink)
+                  repo.index.add([Slink]) 
+                  print('Files Added Successfully') 
+                  repo.index.commit(Slink) 
                   print('Commited successfully')
                   win.destroy()
             except:           
