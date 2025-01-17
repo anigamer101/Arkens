@@ -69,7 +69,7 @@ def seti():
                   #print('Files Added Successfully') 
                   #repo.index.commit(Slink) 
                   #print('Commited successfully')
-                  win == 0
+                  win.destroy()
             except:           
  
                   messagebox.showerror("Arkens","Error : Token exists")
