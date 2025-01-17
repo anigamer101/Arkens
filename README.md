@@ -13,7 +13,7 @@
    <p>•Install Arkens<p>
    <p>                                                                                                                                     
        </p>
-          <p>•Clone the respective token GIT repository and keep Arkens in there.<p>
+          <p>•Clone the respective token GIT repository and keep Arkens in there.(rename it to a unique name.)<p>
    <p>                                                                                                                                     
        </p>
           <p>•Make a Token<p>

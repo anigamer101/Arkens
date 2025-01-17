@@ -5,8 +5,8 @@ import os
 from tkinter import messagebox
 import tkinter as tk
 import os.path
-from PIL import Image, ImageTk
-from pathlib import Path
+import subprocess
+import shared
 
 #GUI Init
 win=Tk()
@@ -38,7 +38,6 @@ linlabel.pack(pady=20)
 Linkbox=Text(win, height=5, width=25)
 Linkbox.pack()
 
-
 #Text box 2 (Repo)
 relabel = tk.Label(win, textvariable=rep, height=3, width=30, bd=3,)
 relabel.pack(pady=20)
@@ -57,15 +56,20 @@ subut.pack()
 
 #Token Creation
 def seti():
-      File = [link,".txt"]
+      global Slink, File
+      python = "python"
+      File = link,".txt"
       Slink = " ".join(File)
+      shared.value = (link)
       if not  os.path.exists(link):
+            #print(Slink)
             f = open(Slink, "x")
-            print(Slink)
-            repo.index.add([Slink]) 
-            print('Files Added Successfully') 
-            repo.index.commit(Slink) 
-            print('Commited successfully')
+            #print(Slink)
+            #repo.index.add([Slink]) 
+            #print('Files Added Successfully') 
+            #repo.index.commit(Slink) 
+            #print('Commited successfully')
+            win == 0
       else : 
             messagebox.showerror("Arkens","Error : Token exists")
       
