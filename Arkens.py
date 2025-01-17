@@ -27,7 +27,6 @@ lin.set("Name your token")
 def get_input():
       global repo, exp, Blink, link, expi, re
       link = Linkbox.get("1.0","end-1c")
-      repo = rebox.get("1.0","end-1c")
       exp = exbox.get("1.0","end-1c")
       expi = int(exp)
       re = ["Repo", "(", repo,")"]
@@ -40,13 +39,7 @@ linlabel.pack(pady=20)
 Linkbox=Text(win, height=5, width=25)
 Linkbox.pack()
 
-#Text box 2 (Repo)
-relabel = tk.Label(win, textvariable=rep, height=3, width=30, bd=3,)
-relabel.pack(pady=20)
-rebox=Text(win, height=5, width=25)
-rebox.pack()
-
-#Text box 3 (Valid until)
+#Text box 2 (Valid until)
 exlabel = tk.Label(win, textvariable=ex, height=3, width=40, bd=3,)
 exlabel.pack(pady=20)
 exbox =Text(win, height = 5, width = 25)
