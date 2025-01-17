@@ -26,11 +26,13 @@ lin.set("Name your token")
 
 #Submit button execution code
 def get_input():
-      global repo, exp, Blink, link, expi
+      global repo, exp, Blink, link, expi, re
       link = Linkbox.get("1.0","end-1c")
       repo = rebox.get("1.0","end-1c")
       exp = exbox.get("1.0","end-1c")
       expi = int(exp)
+      re = ["Repo", "(", repo,")"]
+      repo == re
       seti()
 
 #Text box 1 (Token)
