@@ -1,5 +1,4 @@
 #Imports
-import git
 from tkinter import *
 import os
 from tkinter import messagebox
@@ -66,11 +65,8 @@ def seti():
       if not  os.path.exists(link):
             try :
                   f = open(Slink, "x")
-                  print(Slink)
-                  repo.index.add([Slink]) 
-                  print('Files Added Successfully') 
-                  repo.index.commit(Slink) 
-                  print('Commited successfully')
+                  subprocess.call(["git", "commit"])
+                  subprocess.call(["git", "push"])
                   win.destroy()
             except:           
  
