@@ -29,8 +29,6 @@ def get_input():
       link = Linkbox.get("1.0","end-1c")
       exp = exbox.get("1.0","end-1c")
       expi = int(exp)
-      re = ["Repo", "(", repo,")"]
-      repo == re
       seti()
 
 #Text box 1 (Token)
@@ -58,8 +56,8 @@ def seti():
       if not  os.path.exists(link):
             try :
                   f = open(Slink, "x")
-                  subprocess.call(["git", "commit"])
-                  subprocess.call(["git", "push"])
+                  subprocess.call(["git", "commit -a", Slink])
+                  subprocess.call(["git", "push -add"])
                   win.destroy()
             except:           
  
