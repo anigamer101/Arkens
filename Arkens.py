@@ -26,10 +26,11 @@ lin.set("Name your token")
 
 #Submit button execution code
 def get_input():
-      global repo, exp, Blink, link
+      global repo, exp, Blink, link, expi
       link = Linkbox.get("1.0","end-1c")
       repo = rebox.get("1.0","end-1c")
       exp = exbox.get("1.0","end-1c")
+      expi = int(exp)
       seti()
 
 #Text box 1 (Token)
@@ -57,20 +58,20 @@ subut.pack()
 #Token Creation
 def seti():
       global Slink, File
-      python = "python"
       File = link,".txt"
       Slink = " ".join(File)
       shared.value = (link)
       if not  os.path.exists(link):
-            #print(Slink)
-            f = open(Slink, "x")
-            #print(Slink)
-            #repo.index.add([Slink]) 
-            #print('Files Added Successfully') 
-            #repo.index.commit(Slink) 
-            #print('Commited successfully')
-            win == 0
-      else : 
-            messagebox.showerror("Arkens","Error : Token exists")
+            try :
+                  f = open(Slink, "x")
+                  #print(Slink)
+                  #repo.index.add([Slink]) 
+                  #print('Files Added Successfully') 
+                  #repo.index.commit(Slink) 
+                  #print('Commited successfully')
+                  win == 0
+            except:           
+ 
+                  messagebox.showerror("Arkens","Error : Token exists")
       
 win.mainloop()

@@ -1,8 +1,8 @@
 import time
 import git
 import os
-from Arkens import Slink,exp
-print(Slink)
-print(exp)
-time.sleep(exp)
+from Arkens import Slink, expi
+print(expi)
+print(expi)
+time.sleep(expi)
 os.remove(Slink)
