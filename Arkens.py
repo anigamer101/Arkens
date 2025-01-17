@@ -72,6 +72,6 @@ def seti():
                   win.destroy()
             except:           
  
-                  messagebox.showerror("Arkens","Error : Token exists")
+                  messagebox.showerror("Arkens","Error")
       
 win.mainloop()
