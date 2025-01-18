@@ -5,7 +5,7 @@ from tkinter import messagebox
 import tkinter as tk
 import os.path
 import cmd
-import shared
+import subprocess
 
 #GUI Init
 win=Tk()
@@ -52,10 +52,13 @@ def seti():
       global Slink, File
       File = link,".txt"
       Slink = " ".join(File)
-      shared.value = (link)
       if not  os.path.exists(link):
             try :
                   f = open(Slink, "x")
+                  subprocess.run("git","add",Slink)
+                  subprocess.run("git", "checkout", "main")
+                  subprocess.run("git", "commit", "main")
+                  subprocess.run("git", "push", "main")
                   win.destroy()
             except:           
                   cmd("git checkout main")
