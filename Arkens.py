@@ -4,7 +4,6 @@ import os
 from tkinter import messagebox
 import tkinter as tk
 import os.path
-import cmd
 import subprocess
 
 #GUI Init
