@@ -57,13 +57,10 @@ def seti():
                   f = open(Slink, "x")
                   subprocess.run("git","add",Slink)
                   subprocess.run("git", "checkout", "main")
-                  subprocess.run("git", "commit", "main")
+                  subprocess.run("git", "commit", "main", "-m", Slink)
                   subprocess.run("git", "push", "main")
                   win.destroy()
-            except:           
-                  cmd("git checkout main")
-                  cmd("git commit")
-                  cmd("git push -u https://github.com/anigamer101/Arkens.git")
+            except:
                   messagebox.showerror("Arkens","Error")
       
 win.mainloop()
