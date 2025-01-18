@@ -1,9 +1,14 @@
-import subprocess
+#Imports
 import time
 import os
 from Arkens import Slink, expi
+import cmd
+
+#Expire the token
 time.sleep(expi)
 os.remove(Slink)
-subprocess.call(["git", "checkout", "main"])
-subprocess.call(["git", "commit"])
-subprocess.call(["git", "push", "-u", "https://github.com/anigamer101/Arkens.git"])
+
+#Store the expired state of the token
+cmd("git checkout main")
+cmd("git commit")
+cmd("git push -u https://github.com/anigamer101/Arkens.git")

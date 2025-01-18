@@ -4,7 +4,7 @@ import os
 from tkinter import messagebox
 import tkinter as tk
 import os.path
-import subprocess
+import cmd
 import shared
 
 #GUI Init
@@ -56,12 +56,11 @@ def seti():
       if not  os.path.exists(link):
             try :
                   f = open(Slink, "x")
-                  subprocess.call(["git", "checkout", "main"])
-                  subprocess.call(["git", "commit", Slink])
-                  subprocess.call(["git", "push", "-u", "https://github.com/anigamer101/Arkens.git"])
                   win.destroy()
             except:           
- 
+                  cmd("git checkout main")
+                  cmd("git commit")
+                  cmd("git push -u https://github.com/anigamer101/Arkens.git")
                   messagebox.showerror("Arkens","Error")
       
 win.mainloop()
