@@ -52,14 +52,13 @@ def seti():
       File = link,".txt"
       Slink = " ".join(File)
       if not  os.path.exists(link):
-            try :
-                  f = open(Slink, "x")
-                  subprocess.run("git","add",Slink)
-                  subprocess.run("git", "checkout", "main")
-                  subprocess.run("git", "commit", "main", "-m", Slink)
-                  subprocess.run("git", "push", "main")
-                  win.destroy()
-            except:
-                  messagebox.showerror("Arkens","Error")
+            
+            f = open(Slink, "x")
+            subprocess.run(["git","add", Slink])
+            subprocess.run(["git", "checkout", "main"])
+            subprocess.run(["git", "commit", "https://github.com/anigamer101/Arkens.git", "-m", Slink])
+            subprocess.run(["git", "push", "https://github.com/anigamer101/Arkens.git", "main"])
+            win.destroy()
+            #messagebox.showerror("Arkens","Error")
       
 win.mainloop()
