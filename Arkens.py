@@ -54,10 +54,10 @@ def seti():
       if not  os.path.exists(link):
             
             f = open(Slink, "x")
-            subprocess.run(["git","add", Slink])
             subprocess.run(["git", "checkout", "main"])
-            subprocess.run(["git", "commit", "https://github.com/anigamer101/Arkens.git", "-m", Slink])
-            subprocess.run(["git", "push", "https://github.com/anigamer101/Arkens.git", "main"])
+            subprocess.run(["git","add", Slink])
+            subprocess.run(["git", "commit","-m", Slink])
+            subprocess.run(["git", "push", "--all"])
             win.destroy()
             #messagebox.showerror("Arkens","Error")
       
