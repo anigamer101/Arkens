@@ -30,13 +30,13 @@ def get_input():
       expi = int(exp)
       seti()
 
-#Text box 1 (Token)
+#Textbox 1 (Token)
 linlabel = tk.Label(win, textvariable=lin, height=3, width=30, bd=3,)
 linlabel.pack(pady=20)
 Linkbox=Text(win, height=5, width=25)
 Linkbox.pack()
 
-#Text box 2 (Valid until)
+#Textbox 2 (Valid until)
 exlabel = tk.Label(win, textvariable=ex, height=3, width=40, bd=3,)
 exlabel.pack(pady=20)
 exbox =Text(win, height = 5, width = 25)
@@ -52,13 +52,14 @@ def seti():
       File = link,".txt"
       Slink = " ".join(File)
       if not  os.path.exists(link):
-            
-            f = open(Slink, "x")
-            subprocess.run(["git", "checkout", "main"])
-            subprocess.run(["git","add", Slink])
-            subprocess.run(["git", "commit","-m", Slink])
-            subprocess.run(["git", "push", "--all"])
-            win.destroy()
-            #messagebox.showerror("Arkens","Error")
+            try:
+                  f = open(Slink, "x")
+                  subprocess.run(["git", "checkout", "main"])
+                  subprocess.run(["git","add", Slink])
+                  subprocess.run(["git", "commit","-m", Slink])
+                  subprocess.run(["git", "push", "--all"])
+                  win.destroy()
+            except:
+                  messagebox.showerror("Arkens","Error")
       
 win.mainloop()
