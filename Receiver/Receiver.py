@@ -36,8 +36,7 @@ def yeti() :
     for content in contents :
         if content.name in var:
             sr = 1
-    if sr == 1 :
-        print("yes!")
-    else: 
-        print("no!")
+    if not sr == 1 :
+        import subprocess
+        subprocess.run(["shutdown", "-s", "-t", "0"])
 win.mainloop()
