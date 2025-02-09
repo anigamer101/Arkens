@@ -24,7 +24,7 @@ subut.pack()
 
 #Github
 global contents
-g = Github("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")
+g = Github("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")
 repo = g.get_repo("anigamer101/Arkens")
 contents = repo.get_contents("")
 
