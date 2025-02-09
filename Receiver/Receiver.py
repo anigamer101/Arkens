@@ -19,12 +19,12 @@ Tbox =Text(win, height = 1, width = 23)
 Tbox.pack()
 
 #Submit Button
-subut= Button(win, height=1, width=25, text="check", command=lambda: yeti())
+subut= Button(win, height=1, width=25, text="Link", command=lambda: yeti())
 subut.pack()
 
 #Github
 global contents
-g = Github("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")
+g = Github("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")
 repo = g.get_repo("anigamer101/Arkens")
 contents = repo.get_contents("")
 
