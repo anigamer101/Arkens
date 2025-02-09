@@ -32,7 +32,8 @@ contents = repo.get_contents("")
 #Check if a file is present
 def yeti() :
     global sr
-    var =  Tbox.get("1.0", "end-1c")
+    sar = [Tbox.get("1.0", "end-1c"), ".txt"]
+    var =  sar.join("")
     for content in contents :
         if content.name in var:
             sr = 1
